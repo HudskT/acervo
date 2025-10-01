@@ -2,42 +2,74 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso de Francês</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      height: 100vh; display: flex; justify-content: center; align-items: center;
-      background: linear-gradient(135deg, #0a0a0a, #111); font-family: 'Roboto', sans-serif; color: #fff;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(
+        to right,
+        #0055A4 33.33%,
+        #FFFFFF 33.33% 66.66%,
+        #EF4135 66.66%
+      );
     }
+
     .container {
-      text-align: center; background-color: #111; padding: 50px; border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6); width: 90%; max-width: 500px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
     }
-    h1 { font-size: 2rem; margin-bottom: 40px; color: #ff5555; }
-    .btn {
-      display: block; width: 80%; max-width: 250px; margin: 15px auto; padding: 18px 0;
-      font-size: 1.2rem; color: #fff; background-color: #222; border: 2px solid #333;
-      border-radius: 12px; cursor: pointer; transition: all 0.3s ease; text-decoration: none;
+
+    h1 {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #003399;
     }
-    .btn:hover {
-      background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(255,85,85,0.5);
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
-    .checkbox-container { margin-top: 30px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1rem; cursor: pointer; }
-    input[type="checkbox"] { width: 22px; height: 22px; cursor: pointer; }
+
+    .button-container a {
+      padding: 14px;
+      border-radius: 12px;
+      background: #003399;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .button-container a:hover {
+      background: #EF4135;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(204,0,0,0.4);
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Módulo 1</h1>
-    <button class="btn" onclick="location.href='videoaula.html'">Video Aula</button>
-    <button class="btn" onclick="location.href='materiais.html'">Materiais de Estudo</button>
-
-    <label class="checkbox-container">
-      <input type="checkbox" id="concluido">
-      Concluí o Módulo 1
-    </label>
+    <h1>Curso de Francês</h1>
+    <div class="button-container">
+      <a href="videoaula.html">Vídeo Aulas</a>
+      <a href="audioaulas.html">Áudio Aulas</a>
+      <a href="materiais.html">Materiais de Estudo</a>
+    </div>
   </div>
 </body>
 </html>
