@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Curso de Francês</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      height: 100vh; display: flex; justify-content: center; align-items: center;
+      background: linear-gradient(135deg, #0a0a0a, #111); font-family: 'Roboto', sans-serif; color: #fff;
+    }
+    .container {
+      text-align: center; background-color: #111; padding: 50px; border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6); width: 90%; max-width: 500px;
+    }
+    h1 { font-size: 2rem; margin-bottom: 40px; color: #ff5555; }
+    .btn {
+      display: block; width: 80%; max-width: 250px; margin: 15px auto; padding: 18px 0;
+      font-size: 1.2rem; color: #fff; background-color: #222; border: 2px solid #333;
+      border-radius: 12px; cursor: pointer; transition: all 0.3s ease; text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,85,85,0.5);
+    }
+    .checkbox-container { margin-top: 30px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1rem; cursor: pointer; }
+    input[type="checkbox"] { width: 22px; height: 22px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Módulo 1</h1>
+    <button class="btn" onclick="location.href='videoaula.html'">Video Aula</button>
+    <button class="btn" onclick="location.href='materiais.html'">Materiais de Estudo</button>
+
+    <label class="checkbox-container">
+      <input type="checkbox" id="concluido">
+      Concluí o Módulo 1
+    </label>
+  </div>
+</body>
+</html>

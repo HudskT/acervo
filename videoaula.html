@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Vídeo Aulas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+      background: linear-gradient(135deg, #0a0a0a, #111); font-family: 'Roboto', sans-serif; color: #fff; padding-top: 50px;
+    }
+    h1 { font-size: 2rem; margin-bottom: 30px; color: #ff5555; }
+    .btn {
+      display: block; width: 80%; max-width: 250px; margin: 10px auto; padding: 15px 0;
+      font-size: 1.1rem; color: #fff; background-color: #222; border: 2px solid #333;
+      border-radius: 12px; cursor: pointer; transition: all 0.3s ease; text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,85,85,0.5);
+    }
+    iframe { width: 80%; height: 500px; border: none; margin-top: 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+    .back-btn {
+      position: absolute; top: 15px; left: 15px; background-color: #222; border: 2px solid #333;
+      color: #fff; padding: 10px 15px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,85,85,0.5);
+    }
+  </style>
+</head>
+<body>
+  <button class="back-btn" onclick="history.back()">← Voltar</button>
+  <h1>Vídeo Aulas</h1>
+  <button class="btn" onclick="trocarVideo('https://drive.google.com/file/d/13bb7y67lZVHTt01q-pVlyazKAlvtKcsF/preview')">Vídeo 1</button>
+  <button class="btn" onclick="trocarVideo('https://drive.google.com/file/d/12NCgOSoAnPy0gzQc2-8aw2OdeFNv5Bfq/preview')">Vídeo 2</button>
+  <iframe id="player" src="" allow="autoplay"></iframe>
+
+  <script>
+    function trocarVideo(link) {
+      document.getElementById('player').src = link;
+    }
+  </script>
+</body>
+</html>

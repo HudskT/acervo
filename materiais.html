@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Materiais de Estudo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+      background: linear-gradient(135deg, #0a0a0a, #111); font-family: 'Roboto', sans-serif; color: #fff; padding-top: 50px;
+    }
+    h1 { font-size: 2rem; margin-bottom: 30px; color: #ff5555; }
+    a, .btn {
+      display: inline-block; margin: 10px auto; padding: 15px 25px; font-size: 1.1rem;
+      color: #fff; background-color: #222; border-radius: 12px; text-decoration: none; border: 2px solid #333;
+      cursor: pointer; transition: all 0.3s ease;
+    }
+    a:hover, .btn:hover {
+      background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,85,85,0.5);
+    }
+    .back-btn {
+      position: absolute; top: 15px; left: 15px; background-color: #222; border: 2px solid #333;
+      color: #fff; padding: 10px 15px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,85,85,0.5);
+    }
+  </style>
+</head>
+<body>
+  <button class="back-btn" onclick="history.back()">← Voltar</button>
+  <h1>Materiais de Estudo</h1>
+  <a href="https://drive.google.com/drive/folders/1LElRVB270UpdAkSum0DscvmpRCrP7Sjw?usp=drive_link" target="_blank">Abrir Materiais</a>
+</body>
+</html>
