@@ -20,7 +20,10 @@
       background-color: #ff5555; border-color: #ff4444; transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(255,85,85,0.5);
     }
-    iframe { width: 80%; height: 500px; border: none; margin-top: 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+    iframe {
+      width: 80%; height: 500px; border: none; margin-top: 20px; border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
     .back-btn {
       position: absolute; top: 15px; left: 15px; background-color: #222; border: 2px solid #333;
       color: #fff; padding: 10px 15px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;
@@ -34,9 +37,11 @@
 <body>
   <button class="back-btn" onclick="history.back()">← Voltar</button>
   <h1>Vídeo Aulas</h1>
+
   <button class="btn" onclick="trocarVideo('https://drive.google.com/file/d/13bb7y67lZVHTt01q-pVlyazKAlvtKcsF/preview')">Vídeo 1</button>
   <button class="btn" onclick="trocarVideo('https://drive.google.com/file/d/12NCgOSoAnPy0gzQc2-8aw2OdeFNv5Bfq/preview')">Vídeo 2</button>
-  <iframe id="player" src="" allow="autoplay"></iframe>
+
+  <iframe id="player" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
   <script>
     function trocarVideo(link) {
@@ -45,3 +50,4 @@
   </script>
 </body>
 </html>
+
